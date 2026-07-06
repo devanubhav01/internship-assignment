@@ -9,14 +9,19 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB on every request (for Vercel serverless)
-app.use(async (req, res, next) => {
-  await connectDB();
-  next();
-});
-
+// Root endpoint — works without DB
 app.get('/', (req, res) => {
   res.json({ message: 'To-Do List API is running 🚀' });
+});
+
+// Connect to MongoDB for API routes
+app.use('/api', async (req, res, next) => {
+  try {
+    await connectDB();
+    next();
+  } catch (err) {
+    res.status(500).json({ message: 'Database connection failed', error: err.message });
+  }
 });
 
 app.use('/api/tasks', taskRoutes);

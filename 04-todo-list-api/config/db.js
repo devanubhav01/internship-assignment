@@ -7,17 +7,19 @@ async function connectDB() {
     return; // already connected
   }
 
+  const uri = process.env.MONGO_URI;
+  if (!uri) {
+    console.warn('MONGO_URI is not defined — skipping DB connection');
+    return;
+  }
+
   try {
-    const uri = process.env.MONGO_URI;
-    if (!uri) {
-      throw new Error('MONGO_URI is not defined in your .env file');
-    }
     cached = await mongoose.connect(uri);
     global._mongooseConnection = cached;
     console.log('MongoDB connected');
   } catch (err) {
     console.error('MongoDB connection failed:', err.message);
-    process.exit(1);
+    throw err; // let the caller handle it (don't crash serverless)
   }
 }
 
