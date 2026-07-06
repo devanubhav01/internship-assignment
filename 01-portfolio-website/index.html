@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aria Kapoor — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="regmark regmark--tl" aria-hidden="true"></div>
+<div class="regmark regmark--tr" aria-hidden="true"></div>
+<div class="regmark regmark--bl" aria-hidden="true"></div>
+<div class="regmark regmark--br" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="#top" class="nav__mark">AK</a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#about">01 · About</a></li>
+      <li><a href="#education">02 · Education</a></li>
+      <li><a href="#projects">03 · Projects</a></li>
+      <li><a href="#contact">04 · Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero" id="about">
+    <div class="hero__entry">
+      <span class="entry-tag">ENTRY NO. 001</span>
+      <span class="entry-tag entry-tag--date">LOGGED JUL 2026</span>
+    </div>
+    <h1 class="hero__title">Aria Kapoor</h1>
+    <p class="hero__role">Frontend Developer &amp; Interaction Designer</p>
+    <p class="hero__lede">
+      I build interfaces that hold up under real use — legible, fast, and a little
+      bit stubborn about the details. Currently based in Bengaluru, working across
+      React, design systems, and the occasional stretch of plain CSS for the fun of it.
+    </p>
+    <div class="hero__stats">
+      <div class="stat">
+        <span class="stat__value">4</span>
+        <span class="stat__label">Years building for the web</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value">27</span>
+        <span class="stat__label">Shipped projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value">3</span>
+        <span class="stat__label">Design systems maintained</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <h2 class="section__heading"><span class="section__num">02</span> Education</h2>
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__tick" aria-hidden="true"></div>
+        <span class="timeline__year">2019 – 2023</span>
+        <h3 class="timeline__title">B.Tech in Computer Science</h3>
+        <p class="timeline__org">Indian Institute of Information Technology, Pune</p>
+        <p class="timeline__note">Graduated with honors. Thesis on accessible data visualization for low-bandwidth networks.</p>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__tick" aria-hidden="true"></div>
+        <span class="timeline__year">2023</span>
+        <h3 class="timeline__title">Frontend Engineering Intensive</h3>
+        <p class="timeline__org">Independent cohort program, remote</p>
+        <p class="timeline__note">Twelve-week deep dive into component architecture, performance budgets, and design tooling.</p>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__tick" aria-hidden="true"></div>
+        <span class="timeline__year">2024 – present</span>
+        <h3 class="timeline__title">Self-directed study</h3>
+        <p class="timeline__org">Ongoing</p>
+        <p class="timeline__note">Typography, motion design, and reading a lot of other people's CSS.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section" id="projects">
+    <h2 class="section__heading"><span class="section__num">03</span> Projects</h2>
+    <div class="cards">
+
+      <article class="card">
+        <span class="card__fold" aria-hidden="true"></span>
+        <span class="card__index">FIG. 01</span>
+        <h3 class="card__title">Ledger — Budgeting App</h3>
+        <p class="card__desc">A personal finance dashboard with real-time charts, envelope budgeting, and offline-first sync.</p>
+        <ul class="card__tags">
+          <li>React</li><li>TypeScript</li><li>D3.js</li>
+        </ul>
+        <a class="card__link" href="#" aria-label="View Ledger project">View project →</a>
+      </article>
+
+      <article class="card">
+        <span class="card__fold" aria-hidden="true"></span>
+        <span class="card__index">FIG. 02</span>
+        <h3 class="card__title">Fieldnote — Markdown Editor</h3>
+        <p class="card__desc">A distraction-free writing tool with live preview, version history, and a plugin API for custom exports.</p>
+        <ul class="card__tags">
+          <li>Vue</li><li>Node.js</li><li>CodeMirror</li>
+        </ul>
+        <a class="card__link" href="#" aria-label="View Fieldnote project">View project →</a>
+      </article>
+
+      <article class="card">
+        <span class="card__fold" aria-hidden="true"></span>
+        <span class="card__index">FIG. 03</span>
+        <h3 class="card__title">Compass — Design System</h3>
+        <p class="card__desc">A component library and token pipeline adopted across four product teams, with automated visual regression checks.</p>
+        <ul class="card__tags">
+          <li>Storybook</li><li>CSS Vars</li><li>Figma Tokens</li>
+        </ul>
+        <a class="card__link" href="#" aria-label="View Compass project">View project →</a>
+      </article>
+
+      <article class="card">
+        <span class="card__fold" aria-hidden="true"></span>
+        <span class="card__index">FIG. 04</span>
+        <h3 class="card__title">Tideline — Weather Visualizer</h3>
+        <p class="card__desc">An animated, map-based weather explorer built around real tidal and wind data for coastal towns.</p>
+        <ul class="card__tags">
+          <li>React</li><li>Mapbox GL</li><li>WebSockets</li>
+        </ul>
+        <a class="card__link" href="#" aria-label="View Tideline project">View project →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section section--contact" id="contact">
+    <h2 class="section__heading"><span class="section__num">04</span> Contact</h2>
+    <div class="contact">
+      <p class="contact__lede">
+        Have a project, a role, or just a question about how something was built?
+        The next entry in the log could be about that.
+      </p>
+      <form class="contact__form" action="#" method="post">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send message</button>
+      </form>
+      <div class="contact__meta">
+        <div>
+          <span class="entry-tag">EMAIL</span>
+          <a href="mailto:aria.kapoor@example.com">aria.kapoor@example.com</a>
+        </div>
+        <div>
+          <span class="entry-tag">ELSEWHERE</span>
+          <a href="#">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">Reading list</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Logged &amp; maintained by Aria Kapoor · Updated July 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

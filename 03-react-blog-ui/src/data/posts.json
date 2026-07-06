@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Designing Layouts That Don't Fight the Browser",
+    "excerpt": "A look at why fewer, smarter constraints beat pixel-perfect positioning when the viewport keeps changing.",
+    "category": "CSS",
+    "author": "Priya Nair",
+    "date": "2026-06-02",
+    "readTime": 6
+  },
+  {
+    "id": 2,
+    "title": "State Management Without the Ceremony",
+    "excerpt": "You probably don't need a global store yet. Here's how to tell, and what to reach for instead.",
+    "category": "React",
+    "author": "Priya Nair",
+    "date": "2026-06-10",
+    "readTime": 8
+  },
+  {
+    "id": 3,
+    "title": "A Field Guide to CSS Grid Subgrid",
+    "excerpt": "Subgrid quietly solves the alignment problems nested grids used to make painful.",
+    "category": "CSS",
+    "author": "Marcus Webb",
+    "date": "2026-06-14",
+    "readTime": 5
+  },
+  {
+    "id": 4,
+    "title": "Writing Custom Hooks People Actually Reuse",
+    "excerpt": "Most custom hooks get written once and used once. Here's what makes one worth extracting.",
+    "category": "React",
+    "author": "Marcus Webb",
+    "date": "2026-06-21",
+    "readTime": 7
+  },
+  {
+    "id": 5,
+    "title": "Type Narrowing Patterns That Save You Casts",
+    "excerpt": "A tour of discriminated unions, guards, and assertion functions in everyday TypeScript.",
+    "category": "TypeScript",
+    "author": "Sofia Reyes",
+    "date": "2026-06-25",
+    "readTime": 9
+  },
+  {
+    "id": 6,
+    "title": "Debugging Async Bugs You Can't Reproduce",
+    "excerpt": "Race conditions rarely announce themselves. A checklist for hunting the ones that only fail in production.",
+    "category": "JavaScript",
+    "author": "Sofia Reyes",
+    "date": "2026-06-29",
+    "readTime": 10
+  },
+  {
+    "id": 7,
+    "title": "Generics That Explain Themselves",
+    "excerpt": "Naming and constraining generic parameters so the next reader doesn't have to reverse-engineer intent.",
+    "category": "TypeScript",
+    "author": "Priya Nair",
+    "date": "2026-07-01",
+    "readTime": 6
+  },
+  {
+    "id": 8,
+    "title": "The Small Perf Wins Nobody Profiles For",
+    "excerpt": "Memoization has a cost too. Where it actually pays off, and where it's just noise.",
+    "category": "JavaScript",
+    "author": "Marcus Webb",
+    "date": "2026-07-03",
+    "readTime": 7
+  }
+]
